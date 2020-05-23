@@ -1,0 +1,57 @@
+  <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Master MVC</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="{{url}}">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Form <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% call url %}/login">Login</a></li>
+                <li><a href="{{url}}/login/session">Check Session</a></li>
+                <li><a href="{{url}}/Register">Registration</a></li>
+                <li><a href="{{url}}/Forget">Forget Password</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{url}}/list">List All</a></li>
+                <li><a href="{{url}}/list/pagination">List Pagination</a></li>
+                <li><a href="{{url}}/list/withdelete">List Delete</a></li>
+
+              </ul>
+            </li>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{url}}/blog">Blog </a></li>
+                <li><a href="{{url}}/upload/image">Image </a></li>
+                <li><a href="{{url}}/upload/resizeimage">Resize Image </a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Upload <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{url}}/upload">Upload </a></li>
+                <li><a href="{{url}}/upload/image">Image </a></li>
+                <li><a href="{{url}}/upload/resizeimage">Resize Image </a></li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
